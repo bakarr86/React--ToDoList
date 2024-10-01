@@ -1,0 +1,84 @@
+/* App.css */
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Input Styles */
+input[type="text"] {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  width: calc(100% - 130px); /* Adjusted to accommodate button */
+  margin-right: 10px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Button Styles */
+button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* List Styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: white;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Edit Mode Styles */
+li input[type="text"] {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+/* Strikethrough for completed tasks */
+span {
+  flex-grow: 1;
+  overflow: hidden; /* Prevent overflow */
+  white-space: nowrap; /* Prevent wrapping */
+  text-overflow: ellipsis; /* Show ellipsis for long text */
+}
+
+span[style*="text-decoration: line-through"] {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+/* Disabled button */
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
